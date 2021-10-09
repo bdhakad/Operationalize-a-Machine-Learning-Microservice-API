@@ -8,6 +8,8 @@
 setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
+	# run pip install to avoid import error on lintinh
+	# pip install pylint
 	python3 -m venv ~/.devops
 
 install:

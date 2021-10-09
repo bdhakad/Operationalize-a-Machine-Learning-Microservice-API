@@ -10,7 +10,7 @@ dockerpath=dhakadb/prediction:latest
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login -u dhakadb -p Brajesh@2611
+docker login -u dhakadb -p xxxx
 
 # Step 3:
 # Push image to a docker repository
