@@ -1,1 +1,8 @@
-<paste log output from Kubernetes-mediated prediction, here>
+brajeshdhakad@MacBook-Air Operationalize-a-Machine-Learning-Microservice-API % kubectl get pods -n default    
+NAME                                      READY   STATUS    RESTARTS   AGE
+house-price-prediction-74897f9c44-xd5jl   1/1     Running   0          42m
+brajeshdhakad@MacBook-Air Operationalize-a-Machine-Learning-Microservice-API % kubectl get services -n default
+NAME                     TYPE           CLUSTER-IP       EXTERNAL-IP                                                               PORT(S)        AGE
+house-price-prediction   LoadBalancer   10.100.252.129   a76109b40c12844789c65f4b587e3367-1933595348.us-east-1.elb.amazonaws.com   80:31206/TCP   51m
+kubernetes               ClusterIP      10.100.0.1       <none>                                                                    443/TCP        13h
+brajeshdhakad@MacBook-Air Operationalize-a-Machine-Learning-Microservice-API % 

@@ -1,1 +1,23 @@
-<paste log output from Docker prediction, here>
+[2021-10-10 10:38:46,881] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2021-10-10 10:38:46,893] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-10-10 10:38:46,904] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-10-10 10:38:46,907] INFO in app: prediction output : [20.35373177134412]
+192.168.3.154 - - [10/Oct/2021 10:38:46] "POST /predict HTTP/1.1" 200 -
+192.168.3.154 - - [10/Oct/2021 10:41:27] "GET /predict HTTP/1.1" 405 -
+192.168.3.154 - - [10/Oct/2021 10:44:53] "GET / HTTP/1.1" 200 -
+192.168.3.154 - - [10/Oct/2021 10:45:33] "GET / HTTP/1.1" 200 -
+[2021-10-10 10:49:53,841] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2021-10-10 10:49:53,854] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-10-10 10:49:53,864] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-10-10 10:49:53,867] INFO in app: prediction output : [20.35373177134412]
+192.168.3.154 - - [10/Oct/2021 10:49:53] "POST /predict HTTP/1.1" 200 -
