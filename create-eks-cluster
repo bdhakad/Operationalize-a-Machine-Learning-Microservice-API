@@ -1,6 +1,8 @@
+# if using mac then install eksctl to spin a eks cluster
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 
+# create eks cluster
 eksctl create cluster \
 --name ml-cluster \
 --version=1.21 \
@@ -9,12 +11,17 @@ eksctl create cluster \
 --node-type=t2.large \
 --nodes 1
 
-
+# create kubernetes dashboard 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.5/aio/deploy/recommended.yaml
 
+# create a admin account for the cluster
 kubectl apply -f eks-admin-service-account.yaml
 
-to get the token 
+# for login to dashboard require a token, run below command to get the token 
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
 
+# open separate terminate and run
 kubectl proxy
+
+# Dashboard can be access on this url
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#!/login
