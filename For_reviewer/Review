@@ -1,0 +1,4 @@
+1. Deployed microservice url : http://a76109b40c12844789c65f4b587e3367-1933595348.us-east-1.elb.amazonaws.com
+2. Docker hub repo : https://hub.docker.com/repository/docker/dhakadb/prediction  (docker pull dhakadb/prediction:latest)
+3. github repo : https://github.com/bdhakad/Operationalize-a-Machine-Learning-Microservice-API
+4. screenshot folder : For_reviewer
